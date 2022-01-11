@@ -1,6 +1,6 @@
 apiVersion: 1.0.0
 metadata:
-  name: vistaidetest
+  name: che-theia-based-ide
 components:
   - type: cheEditor
     reference: 'https://ubiquitytest.qplatform.it/files/meta.yaml'
