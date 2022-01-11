@@ -4,4 +4,3 @@ metadata:
 components:
   - type: cheEditor
     reference: 'https://ubiquitytest.qplatform.it/files/meta.yaml'
-    id: eclipse/che-theia/next
