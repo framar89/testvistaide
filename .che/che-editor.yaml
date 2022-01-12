@@ -1,7 +1,3 @@
-id: eclipse/che-theia/latest          # mandatory
-registryUrl: https://my-registry.com  # optional
-override:                             # optional
-  containers:
-    - name: theia-ide
-      memoryLimit: 1280Mi
+reference: https://raw.githubusercontent.com/che-samples/che-theia-branding-example/master/che-editor.meta.yaml
+
 
