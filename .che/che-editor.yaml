@@ -1,7 +1,7 @@
 inline:
   schemaVersion: 2.1.0
   metadata:
-    name: che-code3
+    name: che-code4
   components:
     - name: che-code-injector
       container:
@@ -21,6 +21,3 @@ inline:
             exposure: public
             secure: false
             protocol: https
-      attributes:
-        app.kubernetes.io/component: che-code-injector
-        app.kubernetes.io/part-of: che-code.eclipse.org
