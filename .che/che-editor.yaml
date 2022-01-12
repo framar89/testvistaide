@@ -1,15 +1,11 @@
 inline:
   schemaVersion: 2.1.0
   metadata:
-    name: che-code4
+    name: che-code5
   components:
-    - name: che-code-injector
+    - name: testimage
       container:
-        image: 'quay.io/fbenoit/tmp:1.60.1c'
-        command: ["/checode/entrypoint-init-container.sh"]
-        volumeMounts:
-          - name: checode
-            path: /checode-mount
+        image: 'nginxdemos/hello'
         endpoints:
           - name: che-code
             attributes:
