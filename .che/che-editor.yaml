@@ -1,7 +1,7 @@
 inline:
   schemaVersion: 2.1.0
   metadata:
-    name: che-code2
+    name: che-code3
   components:
     - name: che-code-injector
       container:
@@ -10,10 +10,6 @@ inline:
         volumeMounts:
           - name: checode
             path: /checode-mount
-        memoryLimit: 128Mi
-        memoryRequest: 32Mi
-        cpuLimit: 500m
-        cpuRequest: 30m
         endpoints:
           - name: che-code
             attributes:
@@ -28,6 +24,3 @@ inline:
       attributes:
         app.kubernetes.io/component: che-code-injector
         app.kubernetes.io/part-of: che-code.eclipse.org
-    - name: checode
-      volume:
-        ephemeral: true
