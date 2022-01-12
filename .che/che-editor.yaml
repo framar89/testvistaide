@@ -1,11 +1,11 @@
 inline:
   schemaVersion: 2.1.0
   metadata:
-    name: che-code6
+    name: che-code7
   components:
     - name: testimage
       container:
-        image: 'nginxdemos/hello'
+        image: 'docker.io/nginxdemos/hello'
         endpoints:
           - name: che-code
             attributes:
