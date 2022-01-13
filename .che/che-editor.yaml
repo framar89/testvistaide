@@ -10,7 +10,7 @@ inline:
           - name: vista
             targetPort: 80
             exposure: public
-            secure: true
+            secure: false
             protocol: http
             attributes:
               type: main
