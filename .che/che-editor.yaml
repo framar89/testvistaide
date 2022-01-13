@@ -1,22 +1,18 @@
 inline:
   schemaVersion: 2.1.0
   metadata:
-    name: test-custom-ide11
+    name: test-custom-ide12
   components:
     - name: vista-ide
       container:
         image: "nginxdemos/nginx-hello"
+        mountSources: true
         endpoints:
           - name: vista
             exposure: public
-            secure: true
-            targetPort: 80
+            protocol: http
             attributes:
               type: main
-              cookiesAuthEnabled: true
-              discoverable: false
-              urlRewriteSupported: true
-            protocol: http
       attributes:
         ports:
           - exposedPort: 80
