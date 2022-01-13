@@ -1,23 +1,17 @@
 inline:
   schemaVersion: 2.1.0
   metadata:
-    name: test-custom-ide
+    name: test-custom-ide2
   components:
     - name: theia-ide
       container:
         image: "nginxdemos/hello"
-        mountSources: true
         endpoints:
           - name: theia
             targetPort: 80
             exposure: public
             secure: true
             protocol: http
-            attributes:
-              type: main
-              cookiesAuthEnabled: true
-              discoverable: false
-              urlRewriteSupported: true
       attributes:
         app.kubernetes.io/component: che-theia
         app.kubernetes.io/part-of: che-theia.eclipse.org
