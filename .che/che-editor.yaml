@@ -1,7 +1,7 @@
 inline:
   schemaVersion: 2.1.0
   metadata:
-    name: test-custom-ide6
+    name: test-custom-ide7
   components:
     - name: vista-ide
       container:
