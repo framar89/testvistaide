@@ -9,6 +9,7 @@ inline:
         mountSources: true
         endpoints:
           - name: vista
+            targetPort: 80
             exposure: public
             protocol: http
             attributes:
