@@ -1,19 +1,16 @@
 inline:
   schemaVersion: 2.1.0
   metadata:
-    name: test-custom-ide2
+    name: test-custom-ide3
   components:
-    - name: theia-ide
+    - name: vista-ide
       container:
         image: "nginxdemos/hello"
         endpoints:
-          - name: theia
+          - name: vista
             targetPort: 80
             exposure: public
             secure: true
             protocol: http
-      attributes:
-        app.kubernetes.io/component: che-theia
-        app.kubernetes.io/part-of: che-theia.eclipse.org
         ports:
           - exposedPort: 80
