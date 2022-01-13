@@ -15,6 +15,7 @@ inline:
               type: main
               cookiesAuthEnabled: true
               discoverable: false
+              urlRewriteSupported: false
             protocol: http
         ports:
           - exposedPort: 80
