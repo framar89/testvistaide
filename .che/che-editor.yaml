@@ -10,7 +10,7 @@ inline:
           - name: vista
             exposure: public
             secure: true
-            targetPort: 3100
+            targetPort: 80
             attributes:
               type: main
               cookiesAuthEnabled: true
