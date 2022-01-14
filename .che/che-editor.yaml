@@ -1,7 +1,7 @@
 inline:
   schemaVersion: 2.1.0
   metadata:
-    name: test-custom-ide16
+    name: test-custom-ide17
   components:
     - name: vista-ide
       container:
@@ -20,3 +20,20 @@ inline:
       attributes:
         ports:
           - exposedPort: 8000
+    - name: vista-websocket
+      container:
+        image: "ksdn117/web-socket-test"
+        endpoints:
+          - name: websocket
+            targetPort: 8010
+            exposure: public
+            secure: true
+            protocol: ws
+            attributes:
+              type: collocated-terminal
+              discoverable: false
+              cookiesAuthEnabled: true
+              urlRewriteSupported: true
+      attributes:
+        ports:
+          - exposedPort: 8010
