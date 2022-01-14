@@ -5,7 +5,7 @@ inline:
   components:
     - name: vista-ide
       container:
-        image: "nginxdemos/nginx-hello"
+        image: "crccheck/hello-world"
         mountSources: true
         endpoints:
           - name: vista
