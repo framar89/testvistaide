@@ -1,7 +1,7 @@
 inline:
   schemaVersion: 2.1.0
   metadata:
-    name: test-custom-ide15
+    name: test-custom-ide16
   components:
     - name: vista-ide
       container:
@@ -14,6 +14,9 @@ inline:
             protocol: http
             attributes:
               type: main
+              cookiesAuthEnabled: true
+              discoverable: false
+              urlRewriteSupported: true
       attributes:
         ports:
           - exposedPort: 8000
