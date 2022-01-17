@@ -1,11 +1,11 @@
 inline:
   schemaVersion: 2.1.0
   metadata:
-    name: test-custom-ide19
+    name: test-custom-ide20
   components:
     - name: vista-ide
       container:
-        image: "crccheck/hello-world"
+        image: "ghcr.io/framar89/vistaidedemo:latest"
         mountSources: true
         endpoints:
           - name: vista
