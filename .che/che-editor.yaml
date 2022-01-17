@@ -1,7 +1,7 @@
 inline:
   schemaVersion: 2.1.0
   metadata:
-    name: test-custom-ide20
+    name: test-custom-ide21
   components:
     - name: vista-ide
       container:
@@ -9,7 +9,7 @@ inline:
         mountSources: true
         endpoints:
           - name: vista
-            targetPort: 8000
+            targetPort: 80
             exposure: public
             protocol: http
             attributes:
@@ -19,7 +19,7 @@ inline:
               urlRewriteSupported: true
       attributes:
         ports:
-          - exposedPort: 8000
+          - exposedPort: 80
     - name: vista-websocket
       container:
         image: "jmalloc/echo-server"
